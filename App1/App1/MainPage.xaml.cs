@@ -12,7 +12,7 @@ namespace App1
     {
         public MainPage()
         {
-            Label label = new Label
+            Label label = new Label //объявление лейбла
             {
                 VerticalTextAlignment = TextAlignment.Center,
                 HorizontalTextAlignment = TextAlignment.Center,
@@ -29,14 +29,16 @@ namespace App1
             tapGesture.Tapped += (s, e) =>
             {
                 count++;
-                if (count % 2 == 0)
+                if (count % 2 == 0)//если пользователь делает четное прикосновение
                 {
+                    //цвет фона меняется на черный
                     label.BackgroundColor = Color.Black;
                     label.TextColor = Color.White;
                 }
 
-                else
+                else 
                 {
+                    //изначально цвет фона lavender
                     label.TextColor = Color.Black;
                     label.BackgroundColor = Color.Lavender;
                 }
